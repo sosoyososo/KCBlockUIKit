@@ -1,5 +1,5 @@
 //
-//  KCSimpleViewController.swift
+//  KCBlockViewController.swift
 //  KCUIKitAddtion
 //
 //  Created by karsa on 2017/5/4.
@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class KCSimpleViewController: UIViewController {
-    public var loadViewAction : (KCSimpleViewController)->() = { _ in
+open class KCBlockViewController: UIViewController {
+    public var loadViewAction : (KCBlockViewController)->() = { _ in
     }
     
-    public var viewWillAppearAction : (KCSimpleViewController)->() = { _ in
+    public var viewWillAppearAction : (KCBlockViewController)->() = { _ in
     }
     
-    public var viewWillDisappearAction : (KCSimpleViewController)->() = { _ in
+    public var viewWillDisappearAction : (KCBlockViewController)->() = { _ in
     }
     
     

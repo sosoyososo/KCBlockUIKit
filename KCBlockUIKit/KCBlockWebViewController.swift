@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class KCWebViewController : UIViewController {
+open class KCBlockWebViewController : UIViewController {
     open var url : URL!
     open let webView = UIWebView()
     

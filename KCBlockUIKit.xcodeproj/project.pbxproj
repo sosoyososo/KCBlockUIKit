@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
-		476347B71F42F0FC00F041C1 /* KCSimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B61F42F0FC00F041C1 /* KCSimpleViewController.swift */; };
-		476347B91F42F10400F041C1 /* KCWebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B81F42F10400F041C1 /* KCWebController.swift */; };
+		476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */; };
+		476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */; };
 		476347BC1F42F12900F041C1 /* UIViewController_NavAddtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347BB1F42F12900F041C1 /* UIViewController_NavAddtion.swift */; };
 		476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347BD1F42F15A00F041C1 /* UIView_Addtion.swift */; };
 		476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347BF1F42F1A300F041C1 /* KCBlockTableView_Extension.swift */; };
@@ -34,8 +34,8 @@
 
 /* Begin PBXFileReference section */
 		476347B11F42F06700F041C1 /* KCBlockTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockTableView.swift; sourceTree = "<group>"; };
-		476347B61F42F0FC00F041C1 /* KCSimpleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCSimpleViewController.swift; sourceTree = "<group>"; };
-		476347B81F42F10400F041C1 /* KCWebController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCWebController.swift; sourceTree = "<group>"; };
+		476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockViewController.swift; sourceTree = "<group>"; };
+		476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockWebViewController.swift; sourceTree = "<group>"; };
 		476347BB1F42F12900F041C1 /* UIViewController_NavAddtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController_NavAddtion.swift; sourceTree = "<group>"; };
 		476347BD1F42F15A00F041C1 /* UIView_Addtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Addtion.swift; sourceTree = "<group>"; };
 		476347BF1F42F1A300F041C1 /* KCBlockTableView_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockTableView_Extension.swift; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				476347BF1F42F1A300F041C1 /* KCBlockTableView_Extension.swift */,
-				476347B81F42F10400F041C1 /* KCWebController.swift */,
-				476347B61F42F0FC00F041C1 /* KCSimpleViewController.swift */,
+				476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */,
+				476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */,
 				476347B11F42F06700F041C1 /* KCBlockTableView.swift */,
 			);
 			name = Block;
@@ -277,11 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				476347BC1F42F12900F041C1 /* UIViewController_NavAddtion.swift in Sources */,
-				476347B91F42F10400F041C1 /* KCWebController.swift in Sources */,
+				476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */,
 				476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */,
 				476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */,
 				476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */,
-				476347B71F42F0FC00F041C1 /* KCSimpleViewController.swift in Sources */,
+				476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

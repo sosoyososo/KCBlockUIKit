@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class KCBlockSimpleTableView : UITableView, UITableViewDataSource, UITableViewDelegate  {
+open final class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDelegate  {
     public var items : [[Any]]? {
         didSet {
             self.dataSource = self

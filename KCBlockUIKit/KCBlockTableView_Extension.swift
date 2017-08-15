@@ -42,7 +42,7 @@ open class KCBlockTableItem {
     }
 }
 
-extension KCBlockSimpleTableView {
+extension KCBlockTableView {
     public func item(at indexPath: IndexPath) -> Any? {
         if let items = items {
             if indexPath.section < items.count {
