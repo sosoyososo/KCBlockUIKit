@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class KCBlockViewController: UIViewController {
+public class KCBlockViewController: UIViewController {
     public var loadViewAction : (KCBlockViewController)->() = { _ in
     }
     
@@ -20,17 +20,17 @@ open class KCBlockViewController: UIViewController {
     
     
     
-    public override func loadView() {
+    override public  func loadView() {
         super.loadView()
         loadViewAction(self)
     }
     
-    public override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         viewWillAppearAction(self)
     }
     
-    public override func viewWillDisappear(_ animated: Bool) {
+    override public func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         viewWillDisappearAction(self)
     }
