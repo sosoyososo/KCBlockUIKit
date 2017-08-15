@@ -17,6 +17,8 @@
 		476347C71F42F1F800F041C1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C31F42F1F800F041C1 /* RxCocoa.framework */; };
 		476347C81F42F1F800F041C1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C41F42F1F800F041C1 /* RxSwift.framework */; };
 		476347C91F42F1F800F041C1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C51F42F1F800F041C1 /* SnapKit.framework */; };
+		476347D11F42FA2800F041C1 /* KCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347D01F42FA2800F041C1 /* KCLoading.swift */; };
+		476347D31F42FBF500F041C1 /* KCTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347D21F42FBF500F041C1 /* KCTips.swift */; };
 		4789B3131F42EFED00B12452 /* KCBlockUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B3091F42EFED00B12452 /* KCBlockUIKit.framework */; };
 		4789B3181F42EFED00B12452 /* KCBlockUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789B3171F42EFED00B12452 /* KCBlockUIKitTests.swift */; };
 		4789B31A1F42EFED00B12452 /* KCBlockUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -43,6 +45,12 @@
 		476347C31F42F1F800F041C1 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../Carthage/swift3/Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		476347C41F42F1F800F041C1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/swift3/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		476347C51F42F1F800F041C1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../Carthage/swift3/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		476347D01F42FA2800F041C1 /* KCLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLoading.swift; sourceTree = "<group>"; };
+		476347D21F42FBF500F041C1 /* KCTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCTips.swift; sourceTree = "<group>"; };
+		476347EF1F42FF7600F041C1 /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		476347F11F42FF7600F041C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		476347FA1F42FF7600F041C1 /* DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUITests.swift; sourceTree = "<group>"; };
+		476347FC1F42FF7600F041C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4789B3091F42EFED00B12452 /* KCBlockUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KCBlockUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCBlockUIKit.h; sourceTree = "<group>"; };
 		4789B30D1F42EFED00B12452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,11 +113,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		476347CD1F42F8F400F041C1 /* SimpleComponents */ = {
+			isa = PBXGroup;
+			children = (
+				476347D01F42FA2800F041C1 /* KCLoading.swift */,
+				476347D21F42FBF500F041C1 /* KCTips.swift */,
+			);
+			name = SimpleComponents;
+			sourceTree = "<group>";
+		};
+		476347EE1F42FF7600F041C1 /* DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				476347EF1F42FF7600F041C1 /* DemoTests.swift */,
+				476347F11F42FF7600F041C1 /* Info.plist */,
+			);
+			path = DemoTests;
+			sourceTree = "<group>";
+		};
+		476347F91F42FF7600F041C1 /* DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				476347FA1F42FF7600F041C1 /* DemoUITests.swift */,
+				476347FC1F42FF7600F041C1 /* Info.plist */,
+			);
+			path = DemoUITests;
+			sourceTree = "<group>";
+		};
 		4789B2FF1F42EFED00B12452 = {
 			isa = PBXGroup;
 			children = (
 				4789B30B1F42EFED00B12452 /* KCBlockUIKit */,
 				4789B3161F42EFED00B12452 /* KCBlockUIKitTests */,
+				476347EE1F42FF7600F041C1 /* DemoTests */,
+				476347F91F42FF7600F041C1 /* DemoUITests */,
 				4789B30A1F42EFED00B12452 /* Products */,
 				476347C11F42F1F800F041C1 /* Frameworks */,
 			);
@@ -127,6 +164,7 @@
 		4789B30B1F42EFED00B12452 /* KCBlockUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				476347CD1F42F8F400F041C1 /* SimpleComponents */,
 				476347BA1F42F11F00F041C1 /* UIKitExtension */,
 				476347B31F42F0A000F041C1 /* Block */,
 				4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */,
@@ -222,6 +260,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 4789B2FF1F42EFED00B12452;
 			productRefGroup = 4789B30A1F42EFED00B12452 /* Products */;
@@ -281,7 +320,9 @@
 				476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */,
 				476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */,
 				476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */,
+				476347D31F42FBF500F041C1 /* KCTips.swift in Sources */,
 				476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */,
+				476347D11F42FA2800F041C1 /* KCLoading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
