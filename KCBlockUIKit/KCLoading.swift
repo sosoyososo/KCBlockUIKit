@@ -1,64 +1,65 @@
 //
 //  KCLoading.swift
-//  KCBlockUIKit
+//  WishClound
 //
-//  Created by karsa on 2017/8/15.
-//  Copyright © 2017年 karsa. All rights reserved.
+//  Created by karsa on 2017/9/1.
+//  Copyright © 2017年 bugu. All rights reserved.
 //
 
 import UIKit
 
-open class KCLoading {
-    private let loading = KCLoadingView()
-    private let masks = UIView()
-    public class func showLoading(in view : UIView) -> KCLoading {
-        let load = KCLoading()
-        load.masks.backgroundColor = UIColor.clear
-        
-        view.addSubview(load.masks)
-        load.masks.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview()
-        }
-        
-        load.masks.addSubview(load.loading)
-        load.loading.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.size.equalTo(CGSize(width: 80, height: 80))
-        }
-        DispatchQueue.main.async { [weak load] in
-            load?.loading.indicator.startAnimating()
-        }
-        return load
+open class KCLoading: UIView {
+    public convenience init() {
+        self.init(frame: CGRect.zero)
     }
     
-    public func hide() {
-        masks.removeFromSuperview()
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
     }
     
-}
-
-class KCLoadingView: UIView {
-    let indicator = UIActivityIndicatorView()
-    init() {
-        super.init(frame: CGRect.zero)
-        self.setUp()
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.setUp()
+        setUp()
     }
     
     func setUp() {
-        backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.65)
-        layer.masksToBounds = true
-        layer.cornerRadius = 4
-        addSubview(indicator)
-        indicator.sizeToFit()
-        let size = indicator.size
-        indicator.snp.makeConstraints { (make) in
-            make.size.equalTo(size)
+        self.backgroundColor = UIColor.clear
+        let view = self.addSubViewWithConfigData([KCViewClassKey:"UIView"
+            , "backgroundColor":UIColor.init(white: 0, alpha: 0.75)
+            , "layer.cornerRadius":4
+            , "layer.masksToBounds":true])
+        view?.snp.makeConstraints(  { (make) in
+            make.size.equalTo(CGSize(width: 80, height: 80))
             make.center.equalToSuperview()
+        })
+        
+        let activityIndicator = view?.addSubViewWithConfigData([KCViewClassKey:"UIActivityIndicatorView"]) as? UIActivityIndicatorView
+        activityIndicator?.snp.makeConstraints(  { (make) in
+            make.edges.equalTo(UIEdgeInsets.zero)
+        })
+        activityIndicator?.startAnimating()
+    }
+    
+    public  func hide() {
+        self.removeFromSuperview()
+    }
+}
+
+
+extension UIView {
+    public  func showKCLoading() -> KCLoading {
+        let loading = KCLoading()
+        addSubview(loading)
+        loading.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
         }
+        return loading
+    }
+}
+
+extension UIViewController {
+    public  func showKCLoading() -> KCLoading {
+        return self.view.showKCLoading()
     }
 }

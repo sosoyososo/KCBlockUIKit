@@ -13,12 +13,6 @@ import RxCocoa
 public let KCViewClassKey = "KCViewClass"
 let KCView_Action_Key = "KCView_Action_Key"
 
-public let KCPointPerPixel = (1.0/UIScreen.main.scale)
-public let KCScreenSize = UIScreen.main.bounds.size
-public let KCScreenWidth = UIScreen.main.bounds.size.width
-public let KCScreenHeight = UIScreen.main.bounds.size.height
-
-
 extension UIView {
     
     public var left : CGFloat {
