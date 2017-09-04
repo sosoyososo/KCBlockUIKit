@@ -20,7 +20,7 @@ extension ObservableType {
     }
 }
 
-class KCTips: UIView {
+open class KCTips: UIView {
     private let label = UILabel()
     var tips : String = "" {
         didSet {
