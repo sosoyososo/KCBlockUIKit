@@ -60,3 +60,52 @@ public func KCBuildVersionString() -> String {
     }
     return "1"
 }
+
+
+
+public func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    if let lv = lhs
+        , let rv = rhs {
+        return lv < rv
+    }
+    return false
+}
+
+public func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    if let lv = lhs
+        , let rv = rhs {
+        return lv > rv
+    }
+    return false
+}
+
+public func == <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    if let lv = lhs
+        , let rv = rhs {
+        return lv == rv
+    }
+    if let _ = lhs {
+        return false
+    }
+    if let _ = rhs {
+        return false
+    }
+    return true
+}
+
+public func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    return lhs > rhs || lhs == rhs
+}
+
+public func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+    return lhs < rhs || lhs == rhs
+}
+
+
+public func unwrap<T>(_ optionalValue : T?, _ defaultValue : T) -> T {
+    var ret = defaultValue
+    if let v = optionalValue {
+        ret = v
+    }
+    return ret
+}
