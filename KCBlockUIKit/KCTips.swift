@@ -22,7 +22,7 @@ extension ObservableType {
 
 open class KCTips: UIView {
     private let label = UILabel()
-    var tips : String = "" {
+    public var tips : String = "" {
         didSet {
             let maxW : CGFloat = 240
             let attr = NSAttributedString.init(string: tips, attributes: [NSFontAttributeName:label.font])
@@ -33,16 +33,16 @@ open class KCTips: UIView {
         }
     }
     
-    convenience init() {
+    public convenience init() {
         self.init(frame: CGRect.zero)
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setUp()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setUp()
     }
@@ -73,7 +73,7 @@ open class KCTips: UIView {
 }
 
 extension UIView {
-    func showKCTips(with tips : String,
+    public func showKCTips(with tips : String,
                     autoHide : ((Float, (()->())?))? = nil) -> KCTips {
         let loading = KCTips()
         addSubview(loading)
@@ -97,9 +97,8 @@ extension UIView {
     }
 }
 
-extension UIViewController {
-    
-    func showKCTips(with tips : String,
+extension UIViewController {    
+    public func showKCTips(with tips : String,
                     autoHide : ((Float, (()->())?))? = nil) -> KCTips {
         return view.showKCTips(with: tips, autoHide: autoHide)
     }
