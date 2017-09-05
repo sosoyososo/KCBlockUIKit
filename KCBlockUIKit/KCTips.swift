@@ -24,11 +24,12 @@ open class KCTips: UIView {
     private let label = UILabel()
     public var tips : String = "" {
         didSet {
+            label.text = tips
             let maxW : CGFloat = 240
             let attr = NSAttributedString.init(string: tips, attributes: [NSFontAttributeName:label.font])
-            let frame = attr.boundingRect(with: CGSize.init(width: maxW, height: 1000), options: NSStringDrawingOptions.usesLineFragmentOrigin, context: nil)
+            let frame = attr.boundingRect(with: CGSize.init(width: maxW, height: 400), options: NSStringDrawingOptions.usesLineFragmentOrigin, context: nil)
             label.superview?.snp.makeConstraints({ (make) in
-                make.size.equalTo(CGSize.init(width: min(maxW, frame.size.width), height: frame.size.height))
+                make.size.equalTo(CGSize.init(width: max(min(maxW, frame.size.width)+10.0, 100.0), height: max(frame.size.height+10.0, 30)))
             })
         }
     }
@@ -56,9 +57,8 @@ open class KCTips: UIView {
             , "layer.cornerRadius":4
             , "layer.masksToBounds":true])
         view.snp.makeConstraints { (make) in
-            make.size.equalTo(CGSize(width: 100, height: 40))
-            make.bottom.equalToSuperview().inset(20)
-            make.centerX.equalToSuperview()
+            make.size.equalTo(CGSize(width: 100, height: 40))            
+            make.center.equalToSuperview()
         }
 
         label.updateWithConfigData(["textColor":UIColor.white,
