@@ -45,6 +45,8 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     }
     public var didDisplayCell : ((UITableViewCell, IndexPath)->()) = {_, _ in
     }
+    public var didScroll : ((CGPoint)->()) = { _ in
+    }
     
     
     public func numberOfSections(in tableView: UITableView) -> Int {
@@ -90,10 +92,14 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     }
     
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        willDisplayCell(cell, IndexPath)
+        willDisplayCell(cell, indexPath)
     }
     
     public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        didDisplayCell(cell, IndexPath)
+        didDisplayCell(cell, indexPath)
+    }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        didScroll(contentOffset)
     }
 }
