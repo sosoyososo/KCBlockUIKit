@@ -41,6 +41,10 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     public var sectionFooterView :  ((UITableView, Int) -> UIView?) = { _, _ in
         return nil
     }
+    public var willDisplayCell : ((UITableViewCell, IndexPath)->()) = {_, _ in
+    }
+    public var didDisplayCell : ((UITableViewCell, IndexPath)->()) = {_, _ in
+    }
     
     
     public func numberOfSections(in tableView: UITableView) -> Int {
@@ -83,5 +87,13 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     
     public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         indexPathDeselected(tableView, indexPath)
+    }
+    
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        willDisplayCell(cell, IndexPath)
+    }
+    
+    public func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        didDisplayCell(cell, IndexPath)
     }
 }
