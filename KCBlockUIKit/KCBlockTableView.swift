@@ -11,8 +11,12 @@ import Foundation
 open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDelegate  {
     public var items : [[Any]]? {
         didSet {
-            self.dataSource = self
-            self.delegate = self
+            if nil == self.dataSource {
+                self.dataSource = self
+            }
+            if nil == self.delegate {
+                self.delegate = self
+            }
         }
     }
     public var cellHeight : ((IndexPath) -> CGFloat) = { _ in
