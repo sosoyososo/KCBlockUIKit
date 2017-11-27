@@ -1,0 +1,6 @@
+.DS_Store
+Cartfile.resolved
+build/
+fastlane/
+xcuserdata/*
+xcuserdata
