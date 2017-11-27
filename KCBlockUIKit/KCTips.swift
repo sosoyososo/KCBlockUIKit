@@ -27,7 +27,7 @@ open class KCTips: UIView {
             label.text = tips
             let size = label.sizeThatFits(CGSize(width: 240, height: 400))
             label.superview?.snp.updateConstraints({ (make) in
-                make.size.equalTo(size)
+                make.size.equalTo(CGSize(width: size.width+10, height: size.height+10))
             })
             layoutIfNeeded()
         }
