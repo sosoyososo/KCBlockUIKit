@@ -28,9 +28,10 @@ open class KCTips: UIView {
             let maxW : CGFloat = 240
             let attr = NSAttributedString.init(string: tips, attributes: [NSFontAttributeName:label.font])
             let frame = attr.boundingRect(with: CGSize.init(width: maxW, height: 400), options: NSStringDrawingOptions.usesLineFragmentOrigin, context: nil)
-            label.superview?.snp.makeConstraints({ (make) in
+            label.superview?.snp.remakeConstraints({ (make) in
                 make.size.equalTo(CGSize.init(width: max(min(maxW, frame.size.width)+10.0, 100.0), height: max(frame.size.height+10.0, 30)))
             })
+            layoutIfNeeded()
         }
     }
     
