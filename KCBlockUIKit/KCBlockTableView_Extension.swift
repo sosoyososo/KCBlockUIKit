@@ -55,10 +55,24 @@ extension KCBlockTableView {
         return nil
     }
     
-    public func resetItem(at indexPath : IndexPath, with Item : Any) -> Bool {
+    public func resetItem(at indexPath : IndexPath, with item : Any) -> Bool {
         if let items = items {
             if items.count > indexPath.section && items[indexPath.section].count > indexPath.row {
-                self.items?[indexPath.row][indexPath.row] = item
+                var tmp : [[Any]] = []
+                for i in 0..<items.count {
+                    if i == indexPath.section {
+                        var rows : [Any] = []
+                        for k in 0..<items[i].count {
+                            if k == indexPath.row {
+                                rows.append(item)
+                            } else {
+                                rows.append(items[i][k])
+                            }
+                        }
+                    } else {
+                        tmp.append(items[i])
+                    }
+                }
                 return true
             }
         }
