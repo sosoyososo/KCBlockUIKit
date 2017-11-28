@@ -55,6 +55,16 @@ extension KCBlockTableView {
         return nil
     }
     
+    public func resetItem(at indexPath : IndexPath, with Item : Any) -> Bool {
+        if let items = items {
+            if items.count > indexPath.section && items[indexPath.section].count > indexPath.row {
+                self.items?[indexPath.row][indexPath.row] = item
+                return true
+            }
+        }
+        return false
+    }
+    
     public func isSectionLastRow(_ indexPath : IndexPath) -> Bool {
         var isLast = false
         if let count = self.items?.count {
