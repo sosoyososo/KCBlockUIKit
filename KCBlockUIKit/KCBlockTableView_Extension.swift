@@ -73,6 +73,7 @@ extension KCBlockTableView {
                         tmp.append(items[i])
                     }
                 }
+                self.items = tmp
                 return true
             }
         }
