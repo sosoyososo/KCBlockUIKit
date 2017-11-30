@@ -303,10 +303,6 @@
 			files = (
 			);
 			inputPaths = (
-				"~/Carthage/swift3/Carthage/Build/iOS/RxCocoa.framework",
-				"~/Carthage/swift3/Carthage/Build/iOS/RxSwift.framework",
-				"~/Carthage/swift3/Carthage/Build/iOS/RxBlocking.framework",
-				"~/Carthage/swift3/Carthage/Build/iOS/SnapKit.framework",
 			);
 			outputPaths = (
 			);
