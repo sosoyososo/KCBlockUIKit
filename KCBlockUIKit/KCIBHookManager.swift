@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias KCIBHookCallBack = (NSObject)->()
+public typealias KCIBHookCallBack = (NSObject)->()
 open class KCIBHookManager {
     private var globalHooks : [(KCIBHookCallBack,String)] = []
     private var classHooks : [(KCIBHookCallBack,String,AnyClass)] = []
