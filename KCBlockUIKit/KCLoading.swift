@@ -3,7 +3,6 @@
 //  WishClound
 //
 //  Created by karsa on 2017/9/1.
-//  Copyright © 2017年 bugu. All rights reserved.
 //
 
 import UIKit

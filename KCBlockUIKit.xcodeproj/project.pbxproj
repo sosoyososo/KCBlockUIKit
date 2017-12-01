@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		474592C91FD123DF00D59FA3 /* KCStatusBarStyleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474592C61FD123DF00D59FA3 /* KCStatusBarStyleManager.swift */; };
+		474592CA1FD123DF00D59FA3 /* KCControllerOrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474592C71FD123DF00D59FA3 /* KCControllerOrientationManager.swift */; };
+		474592CB1FD123DF00D59FA3 /* KCIBHookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474592C81FD123DF00D59FA3 /* KCIBHookManager.swift */; };
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
 		476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */; };
 		476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		474592C61FD123DF00D59FA3 /* KCStatusBarStyleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCStatusBarStyleManager.swift; sourceTree = "<group>"; };
+		474592C71FD123DF00D59FA3 /* KCControllerOrientationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCControllerOrientationManager.swift; sourceTree = "<group>"; };
+		474592C81FD123DF00D59FA3 /* KCIBHookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCIBHookManager.swift; sourceTree = "<group>"; };
 		476347B11F42F06700F041C1 /* KCBlockTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockTableView.swift; sourceTree = "<group>"; };
 		476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockViewController.swift; sourceTree = "<group>"; };
 		476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockWebViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +92,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		474592CC1FD1241900D59FA3 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				474592C61FD123DF00D59FA3 /* KCStatusBarStyleManager.swift */,
+				474592C71FD123DF00D59FA3 /* KCControllerOrientationManager.swift */,
+				474592C81FD123DF00D59FA3 /* KCIBHookManager.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		476347B31F42F0A000F041C1 /* Block */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,13 +135,6 @@
 				476347C51F42F1F800F041C1 /* SnapKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		476347CD1F42F8F400F041C1 /* SimpleComponents */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = SimpleComponents;
 			sourceTree = "<group>";
 		};
 		476347EE1F42FF7600F041C1 /* DemoTests */ = {
@@ -170,7 +179,7 @@
 		4789B30B1F42EFED00B12452 /* KCBlockUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				476347CD1F42F8F400F041C1 /* SimpleComponents */,
+				474592CC1FD1241900D59FA3 /* Utility */,
 				476347BA1F42F11F00F041C1 /* UIKitExtension */,
 				476347B31F42F0A000F041C1 /* Block */,
 				4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */,
@@ -317,13 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474592CA1FD123DF00D59FA3 /* KCControllerOrientationManager.swift in Sources */,
 				476347BC1F42F12900F041C1 /* UIViewController_NavAddtion.swift in Sources */,
 				47EA7E5D1F5CFC2D0079B875 /* KCTips.swift in Sources */,
 				476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */,
 				476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */,
 				47EA7E5C1F5CFC2D0079B875 /* KCLoading.swift in Sources */,
 				476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */,
+				474592C91FD123DF00D59FA3 /* KCStatusBarStyleManager.swift in Sources */,
 				47EA7E601F5CFC9A0079B875 /* FuncMacro.swift in Sources */,
+				474592CB1FD123DF00D59FA3 /* KCIBHookManager.swift in Sources */,
 				47EA7E5E1F5CFC2D0079B875 /* KCLogView.swift in Sources */,
 				476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */,
 				476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */,
