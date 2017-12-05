@@ -13,13 +13,13 @@
 		476347BC1F42F12900F041C1 /* UIViewController_NavAddtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347BB1F42F12900F041C1 /* UIViewController_NavAddtion.swift */; };
 		476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347BD1F42F15A00F041C1 /* UIView_Addtion.swift */; };
 		476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347BF1F42F1A300F041C1 /* KCBlockTableView_Extension.swift */; };
-		476347C61F42F1F800F041C1 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C21F42F1F800F041C1 /* RxBlocking.framework */; };
-		476347C71F42F1F800F041C1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C31F42F1F800F041C1 /* RxCocoa.framework */; };
-		476347C81F42F1F800F041C1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C41F42F1F800F041C1 /* RxSwift.framework */; };
-		476347C91F42F1F800F041C1 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476347C51F42F1F800F041C1 /* SnapKit.framework */; };
 		4789B3131F42EFED00B12452 /* KCBlockUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B3091F42EFED00B12452 /* KCBlockUIKit.framework */; };
 		4789B3181F42EFED00B12452 /* KCBlockUIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789B3171F42EFED00B12452 /* KCBlockUIKitTests.swift */; };
 		4789B31A1F42EFED00B12452 /* KCBlockUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4799688E1FD696E200DD3C3A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4799688D1FD696E200DD3C3A /* RxBlocking.framework */; };
+		479968901FD696E600DD3C3A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4799688F1FD696E600DD3C3A /* RxCocoa.framework */; };
+		479968921FD696E900DD3C3A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479968911FD696E900DD3C3A /* RxSwift.framework */; };
+		479968941FD696ED00DD3C3A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479968931FD696ED00DD3C3A /* SnapKit.framework */; };
 		47EA7E5C1F5CFC2D0079B875 /* KCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E591F5CFC2D0079B875 /* KCLoading.swift */; };
 		47EA7E5D1F5CFC2D0079B875 /* KCTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E5A1F5CFC2D0079B875 /* KCTips.swift */; };
 		47EA7E5E1F5CFC2D0079B875 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E5B1F5CFC2D0079B875 /* KCLogView.swift */; };
@@ -57,6 +57,10 @@
 		4789B3121F42EFED00B12452 /* KCBlockUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCBlockUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789B3171F42EFED00B12452 /* KCBlockUIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCBlockUIKitTests.swift; sourceTree = "<group>"; };
 		4789B3191F42EFED00B12452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4799688D1FD696E200DD3C3A /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../../../Carthage/swift3.2/Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		4799688F1FD696E600DD3C3A /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../../Carthage/swift3.2/Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		479968911FD696E900DD3C3A /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../../Carthage/swift3.2/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		479968931FD696ED00DD3C3A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../../Carthage/swift3.2/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		47EA7E591F5CFC2D0079B875 /* KCLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLoading.swift; sourceTree = "<group>"; };
 		47EA7E5A1F5CFC2D0079B875 /* KCTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCTips.swift; sourceTree = "<group>"; };
 		47EA7E5B1F5CFC2D0079B875 /* KCLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLogView.swift; sourceTree = "<group>"; };
@@ -68,10 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				476347C61F42F1F800F041C1 /* RxBlocking.framework in Frameworks */,
-				476347C71F42F1F800F041C1 /* RxCocoa.framework in Frameworks */,
-				476347C81F42F1F800F041C1 /* RxSwift.framework in Frameworks */,
-				476347C91F42F1F800F041C1 /* SnapKit.framework in Frameworks */,
+				479968941FD696ED00DD3C3A /* SnapKit.framework in Frameworks */,
+				4799688E1FD696E200DD3C3A /* RxBlocking.framework in Frameworks */,
+				479968901FD696E600DD3C3A /* RxCocoa.framework in Frameworks */,
+				479968921FD696E900DD3C3A /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +117,11 @@
 		476347C11F42F1F800F041C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				479968931FD696ED00DD3C3A /* SnapKit.framework */,
+				479968911FD696E900DD3C3A /* RxSwift.framework */,
+				4799688F1FD696E600DD3C3A /* RxCocoa.framework */,
 				476347C21F42F1F800F041C1 /* RxBlocking.framework */,
+				4799688D1FD696E200DD3C3A /* RxBlocking.framework */,
 				476347C31F42F1F800F041C1 /* RxCocoa.framework */,
 				476347C41F42F1F800F041C1 /* RxSwift.framework */,
 				476347C51F42F1F800F041C1 /* SnapKit.framework */,
@@ -210,7 +218,7 @@
 				4789B3051F42EFED00B12452 /* Frameworks */,
 				4789B3061F42EFED00B12452 /* Headers */,
 				4789B3071F42EFED00B12452 /* Resources */,
-				476347CA1F42F21400F041C1 /* ShellScript */,
+				476347CA1F42F21400F041C1 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -297,13 +305,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		476347CA1F42F21400F041C1 /* ShellScript */ = {
+		476347CA1F42F21400F041C1 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +468,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "~/Carthage/swift3/Carthage/Build/iOS/";
+				FRAMEWORK_SEARCH_PATHS = "~/Carthage/swift3.2/Carthage/Build/iOS/";
 				INFOPLIST_FILE = KCBlockUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -481,7 +490,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "~/Carthage/swift3/Carthage/Build/iOS/";
+				FRAMEWORK_SEARCH_PATHS = "~/Carthage/swift3.2/Carthage/Build/iOS/";
 				INFOPLIST_FILE = KCBlockUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
