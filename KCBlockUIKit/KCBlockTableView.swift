@@ -51,8 +51,26 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     }
     public var didScroll : ((CGPoint)->()) = { _ in
     }
+    public var canEditIndexPath : (IndexPath)->Bool = { _ in
+        return false
+    }
+    public var editStyleForIndexPath : (IndexPath)->UITableViewCellEditingStyle { _ in
+        return UITableViewCellEditingStyle.none
+    }
+    public var editActionForIndexPath : (UITableView,IndexPath,UITableViewCellEditingStyle)->() = { _, _, _ in
+    }
+    public var willBeginEdit : (UITableView,IndexPath)->() = { _, _ in
+    }
+    public var editDidEnd : (UITableView,IndexPath)->() = { _, _ in
+    }
+    public var rowAction : (UITableView,IndexPath)->[UITableViewRowAction]? = {_, _ in
+        return nil
+    }
+    public var rowDeleteConfirmBtnTitle : (UITableView, IndexPath)->String? = { _, _ in
+        return nil
+    }
     
-    
+    // MARK: Data Source & Delegate
     public func numberOfSections(in tableView: UITableView) -> Int {
         if let count = items?.count {
             return count
@@ -105,5 +123,28 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         didScroll(contentOffset)
+    }
+    
+    // MARK: Edit Table
+    public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return canEditIndexPath(indexPath)
+    }
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return editStyleForIndexPath(indexPath)
+    }
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        editActionForIndexPath(tableView, indexPath, editingStyle)
+    }
+    public func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {
+        willBeginEdit(tableView, indexPath)
+    }
+    public func tableView(_ tableView: UITableView, didEndEditingRowAt indexPath: IndexPath?) {
+        editDidEnd(tableView, indexPath)
+    }
+    public func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        return rowAction(tableView, indexPath)
+    }
+    public func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return rowDeleteConfirmBtnTitle(tableView, indexPath) ?? "删除"
     }
 }
