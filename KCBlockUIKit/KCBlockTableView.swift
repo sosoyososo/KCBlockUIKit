@@ -54,14 +54,14 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     public var canEditIndexPath : (IndexPath)->Bool = { _ in
         return false
     }
-    public var editStyleForIndexPath : (IndexPath)->UITableViewCellEditingStyle { _ in
+    public var editStyleForIndexPath : (IndexPath)->UITableViewCellEditingStyle = { _ in
         return UITableViewCellEditingStyle.none
     }
     public var editActionForIndexPath : (UITableView,IndexPath,UITableViewCellEditingStyle)->() = { _, _, _ in
     }
     public var willBeginEdit : (UITableView,IndexPath)->() = { _, _ in
     }
-    public var editDidEnd : (UITableView,IndexPath)->() = { _, _ in
+    public var editDidEnd : (UITableView,IndexPath?)->() = { _, _ in
     }
     public var rowAction : (UITableView,IndexPath)->[UITableViewRowAction]? = {_, _ in
         return nil
