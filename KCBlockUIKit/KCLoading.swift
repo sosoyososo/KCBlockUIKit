@@ -9,6 +9,12 @@
 import UIKit
 
 open class KCLoading: UIView {
+    public static var staticAfterSetUp : (KCLoading)->() = { _ in
+    }
+    
+    public var afterSetUp : (KCLoading)->() = { _ in
+    }
+    
     public convenience init() {
         self.init(frame: CGRect.zero)
     }
@@ -39,6 +45,9 @@ open class KCLoading: UIView {
             make.edges.equalTo(UIEdgeInsets.zero)
         })
         activityIndicator?.startAnimating()
+        
+        KCLoading.staticAfterSetUp(self)
+        afterSetUp(self)
     }
     
     public  func hide() {
