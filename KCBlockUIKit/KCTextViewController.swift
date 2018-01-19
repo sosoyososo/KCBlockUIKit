@@ -11,8 +11,8 @@ import SnapKit
 
 public class KCTextViewController : KCBlockViewController {
     public let textView = UITextView()
-    
-    override func loadView() {
+        
+    override public  func loadView() {
         super.loadView()
         
         view.addSubview(textView)
