@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		470978B2201F209D006AE1E7 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B0201F209D006AE1E7 /* KCLogView.swift */; };
 		470978B3201F209D006AE1E7 /* KCLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B1201F209D006AE1E7 /* KCLog.swift */; };
+		470978B5201F254C006AE1E7 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B4201F254C006AE1E7 /* KCLogView.swift */; };
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
 		476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */; };
 		476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */; };
@@ -39,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		470978B0201F209D006AE1E7 /* KCLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCLogView.swift; path = ../../WishClound/WishClound/Business/KCLog/KCLogView.swift; sourceTree = "<group>"; };
 		470978B1201F209D006AE1E7 /* KCLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLog.swift; sourceTree = "<group>"; };
+		470978B4201F254C006AE1E7 /* KCLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLogView.swift; sourceTree = "<group>"; };
 		476347B11F42F06700F041C1 /* KCBlockTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockTableView.swift; sourceTree = "<group>"; };
 		476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockViewController.swift; sourceTree = "<group>"; };
 		476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockWebViewController.swift; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 		470978AF201F2087006AE1E7 /* Log */ = {
 			isa = PBXGroup;
 			children = (
+				470978B4201F254C006AE1E7 /* KCLogView.swift */,
 				470978B1201F209D006AE1E7 /* KCLog.swift */,
-				470978B0201F209D006AE1E7 /* KCLogView.swift */,
 			);
 			name = Log;
 			sourceTree = "<group>";
@@ -345,7 +345,7 @@
 				476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */,
 				476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */,
 				47EA7E5C1F5CFC2D0079B875 /* KCLoading.swift in Sources */,
-				470978B2201F209D006AE1E7 /* KCLogView.swift in Sources */,
+				470978B5201F254C006AE1E7 /* KCLogView.swift in Sources */,
 				476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */,
 				47EA7E601F5CFC9A0079B875 /* FuncMacro.swift in Sources */,
 				476A14A72011F0DB008E4122 /* KCTextViewController.swift in Sources */,
