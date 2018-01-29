@@ -10,7 +10,9 @@ import Foundation
 import RxSwift
 
 extension UIViewController {
-    public func setNavTitle(_ title: String, titleColor: UIColor, font: UIFont = UIFont.systemFont(ofSize: 17)) {
+    public func setNavTitle(_ title: String,
+                            titleColor: UIColor,
+                            font: UIFont = UIFont.systemFont(ofSize: 17)) {
         let titleLabel = UILabel()
         titleLabel.updateWithConfigData(["text":title
             ,"textAlignment":NSTextAlignment.center.rawValue

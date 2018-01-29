@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		470978B2201F209D006AE1E7 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B0201F209D006AE1E7 /* KCLogView.swift */; };
+		470978B3201F209D006AE1E7 /* KCLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B1201F209D006AE1E7 /* KCLog.swift */; };
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
 		476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */; };
 		476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */; };
@@ -23,7 +25,6 @@
 		479968941FD696ED00DD3C3A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479968931FD696ED00DD3C3A /* SnapKit.framework */; };
 		47EA7E5C1F5CFC2D0079B875 /* KCLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E591F5CFC2D0079B875 /* KCLoading.swift */; };
 		47EA7E5D1F5CFC2D0079B875 /* KCTips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E5A1F5CFC2D0079B875 /* KCTips.swift */; };
-		47EA7E5E1F5CFC2D0079B875 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E5B1F5CFC2D0079B875 /* KCLogView.swift */; };
 		47EA7E601F5CFC9A0079B875 /* FuncMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EA7E5F1F5CFC9A0079B875 /* FuncMacro.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		470978B0201F209D006AE1E7 /* KCLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KCLogView.swift; path = ../../WishClound/WishClound/Business/KCLog/KCLogView.swift; sourceTree = "<group>"; };
+		470978B1201F209D006AE1E7 /* KCLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLog.swift; sourceTree = "<group>"; };
 		476347B11F42F06700F041C1 /* KCBlockTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockTableView.swift; sourceTree = "<group>"; };
 		476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockViewController.swift; sourceTree = "<group>"; };
 		476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockWebViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 		479968931FD696ED00DD3C3A /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../../Carthage/swift3.2/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		47EA7E591F5CFC2D0079B875 /* KCLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLoading.swift; sourceTree = "<group>"; };
 		47EA7E5A1F5CFC2D0079B875 /* KCTips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCTips.swift; sourceTree = "<group>"; };
-		47EA7E5B1F5CFC2D0079B875 /* KCLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLogView.swift; sourceTree = "<group>"; };
 		47EA7E5F1F5CFC9A0079B875 /* FuncMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FuncMacro.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		470978AF201F2087006AE1E7 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				470978B1201F209D006AE1E7 /* KCLog.swift */,
+				470978B0201F209D006AE1E7 /* KCLogView.swift */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
 		476347B31F42F0A000F041C1 /* Block */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +121,6 @@
 				47EA7E5F1F5CFC9A0079B875 /* FuncMacro.swift */,
 				47EA7E591F5CFC2D0079B875 /* KCLoading.swift */,
 				47EA7E5A1F5CFC2D0079B875 /* KCTips.swift */,
-				47EA7E5B1F5CFC2D0079B875 /* KCLogView.swift */,
 				476347BD1F42F15A00F041C1 /* UIView_Addtion.swift */,
 				476347BB1F42F12900F041C1 /* UIViewController_NavAddtion.swift */,
 			);
@@ -181,6 +191,7 @@
 		4789B30B1F42EFED00B12452 /* KCBlockUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				470978AF201F2087006AE1E7 /* Log */,
 				476347CD1F42F8F400F041C1 /* SimpleComponents */,
 				476347BA1F42F11F00F041C1 /* UIKitExtension */,
 				476347B31F42F0A000F041C1 /* Block */,
@@ -334,11 +345,12 @@
 				476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */,
 				476347C01F42F1A300F041C1 /* KCBlockTableView_Extension.swift in Sources */,
 				47EA7E5C1F5CFC2D0079B875 /* KCLoading.swift in Sources */,
+				470978B2201F209D006AE1E7 /* KCLogView.swift in Sources */,
 				476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */,
 				47EA7E601F5CFC9A0079B875 /* FuncMacro.swift in Sources */,
-				47EA7E5E1F5CFC2D0079B875 /* KCLogView.swift in Sources */,
 				476A14A72011F0DB008E4122 /* KCTextViewController.swift in Sources */,
 				476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */,
+				470978B3201F209D006AE1E7 /* KCLog.swift in Sources */,
 				476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
