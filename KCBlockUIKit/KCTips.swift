@@ -86,8 +86,8 @@ extension UIView {
             _=Observable<Void>.create({ (observer) -> Disposable in
                 observer.onNext(())
                 return Disposables.create()
-            }).delay(time: TimeInterval.init(duration)).subscribe(onNext: { [unowned loading] () in
-                loading.removeFromSuperview()
+            }).delay(time: TimeInterval.init(duration)).subscribe(onNext: { [weak loading] () in
+                loading?.removeFromSuperview()
                 didHideAction?()
             })
         }
