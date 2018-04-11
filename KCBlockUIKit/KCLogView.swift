@@ -108,7 +108,8 @@ open class KCLogViewController : UIViewController {
         }
         
         setNavRightItem("cancel", image: nil, titleColor: UIColor.blue, font: nil) { [unowned self] in
-            self.dismiss(animated: true, completion: false)
+            self.dismiss(animated: true, completion: {
+            })
         }
         
         view.addSubview(table)
