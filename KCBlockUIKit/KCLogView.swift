@@ -103,8 +103,12 @@ open class KCLogViewController : UIViewController {
         setNavTitle("日志", titleColor: .black)
         
         
-        setNavRightItem("filter", image: nil, titleColor: nil, font: nil) { [unowned self] in
+        setNavRightItem("filter", image: nil, titleColor: UIColor.blue, font: nil) { [unowned self] in
             self.showFilter()
+        }
+        
+        setNavRightItem("cancel", image: nil, titleColor: UIColor.blue, font: nil) { [unowned self] in
+            self.dismiss(animated: true, completion: false)
         }
         
         view.addSubview(table)
@@ -143,13 +147,17 @@ open class KCLogViewController : UIViewController {
     func showFilter() {
         let alert = UIAlertController.init(title: "filter", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
         for tag in KCLogManager.share.allLogTags {
-            let action = UIAlertAction.init(title: tag, style: UIAlertActionStyle.default, handler: { (_) in
+            let action = UIAlertAction.init(title: tag, style: UIAlertActionStyle.default, handler: {  [unowned self] (_) in
+                self.filter(with: tag)
             })
             alert.addAction(action)
         }
-        let action = UIAlertAction.init(title: KCLogManager.allTagKey, style: UIAlertActionStyle.default, handler: { (_) in
+        let action = UIAlertAction.init(title: KCLogManager.allTagKey, style: UIAlertActionStyle.default, handler: { [unowned self] (_) in
+            self.filter(with: KCLogManager.allTagKey)
         })
         alert.addAction(action)
+        self.present(alert, animated: true) {
+        }
     }
     
     func filter(with tag : String) {
