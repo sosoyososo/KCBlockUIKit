@@ -38,8 +38,12 @@ public class KCLogToogle {
         
         toggleView.setViewAction({ (_) in
             if let rootController = UIApplication.shared.keyWindow?.rootViewController {
+                var controller = rootController
+                while (controller.presentedViewController != nil) {
+                    controller = controller.presentedViewController!
+                }
                 if KCLogToogle.logsController.navigationController == nil {
-                    rootController.present(
+                    controller.present(
                         UINavigationController.init(rootViewController: KCLogToogle.logsController),
                         animated: true,
                         completion: nil)
@@ -98,6 +102,11 @@ open class KCLogViewController : UIViewController {
         setNavBarBgColor(UIColor.white)
         setNavTitle("日志", titleColor: .black)
         
+        
+        setNavRightItem("filter", image: nil, titleColor: nil, font: nil) { [unowned self] in
+            self.showFilter()
+        }
+        
         view.addSubview(table)
         table.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
@@ -127,6 +136,26 @@ open class KCLogViewController : UIViewController {
                 }
                 self?.table.reloadData()
             })
+    }
+    
+    
+    
+    func showFilter() {
+        let alert = UIAlertController.init(title: "filter", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        for tag in KCLogManager.share.allLogTags {
+            let action = UIAlertAction.init(title: tag, style: UIAlertActionStyle.default, handler: { (_) in
+            })
+            alert.addAction(action)
+        }
+        let action = UIAlertAction.init(title: KCLogManager.allTagKey, style: UIAlertActionStyle.default, handler: { (_) in
+        })
+        alert.addAction(action)
+    }
+    
+    func filter(with tag : String) {
+        tags = [tag]
+        table.items = [KCLogManager.share.filterLog(with: tags)]
+        table.reloadData()
     }
 }
 

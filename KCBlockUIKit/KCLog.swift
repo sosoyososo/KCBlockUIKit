@@ -12,8 +12,20 @@ public let KCLogContentChanged_Notification = "KCLogContentChanged_Notification"
 
 public class KCLogManager {
     public  static let share = KCLogManager()
+    public static let allTagKey = "All"
     
     private var logs : [KCLog] = []
+    public var allLogTags : [String] {
+        get {
+            var tags : Set<String> = []
+            for log in logs {
+                for tag in log.tags {
+                    tags.insert(tag)
+                }
+            }
+            return Array<String>.init(tags)
+        }
+    }
     
     public func addLog(log : KCLog) {
         logs.insert(log, at: 0)
@@ -28,6 +40,9 @@ public class KCLogManager {
     }
     
     public func filterLog(with tags : [String]) -> [KCLog] {
+        if tags.contains(KCLogManager.allTagKey) {
+            return logs
+        }
         return logs.flatMap({ (log) -> KCLog? in
             for tag in tags {
                 if log.tags.contains(tag) {
