@@ -107,7 +107,7 @@ open class KCLogViewController : UIViewController {
             self.showFilter()
         }
         
-        setNavRightItem("cancel", image: nil, titleColor: UIColor.blue, font: nil) { [unowned self] in
+        setNavLeftItem("cancel", image: nil, titleColor: UIColor.blue, font: nil) { [unowned self] in
             self.dismiss(animated: true, completion: {
             })
         }
