@@ -59,8 +59,9 @@ public class KCLog {
         var content : String
         var otherInfo : Any? = nil
         
-        init(with log : String) {
+        public init(with log : String, otherInfo : Any? = nil) {
             self.content = log
+            self.otherInfo = otherInfo
         }
     }
     
