@@ -23,6 +23,10 @@ open class KCBlockWebViewController : UIViewController, UIWebViewDelegate {
     open var didFail : (UIWebView, Error)->() = { _ in
     }
     
+    deinit {
+        webView.delegate = nil
+    }
+    
     public init(url: URL) {
         self.url = url
         super.init(nibName: nil, bundle: nil)
