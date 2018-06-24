@@ -19,6 +19,12 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
             }
         }
     }
+    
+    public func removeDelegateAndDatasource() {
+        self.delegate = nil
+        self.dataSource = nil
+    }
+    
     public var cellHeight : ((IndexPath) -> CGFloat) = { _ in
         return 44
     }
