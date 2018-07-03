@@ -29,6 +29,7 @@ public class KCFloatViewManager {
     public class func addView(with viewItem : KCFloatViewItem) {        
         shareInstance.viewsToShow.append(viewItem)
         viewItem.didHideAction = {
+            shareInstance.currentItem = nil
             shareInstance.hasItemShown = false
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + DispatchTimeInterval.microseconds(250),
                                           execute: {
@@ -50,11 +51,13 @@ public class KCFloatViewManager {
         maskView.backgroundColor = UIColor.init(white: 0, alpha: 0.35)
     }
     private var hasItemShown : Bool = false
+    private var currentItem : KCFloatViewItem? = nil
     private func showItemIfPossible() {
         if hasItemShown == false {
             if  viewsToShow.count > 0 {
                 hasItemShown = true
                 let item = viewsToShow.removeFirst()
+                currentItem = item //prevent it from release here
                 UIApplication.shared.keyWindow?.addSubview(maskView)
                 maskView.snp.makeConstraints({ (make) in
                     make.edges.equalToSuperview()
