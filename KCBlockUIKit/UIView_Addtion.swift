@@ -139,8 +139,8 @@ extension UIView {
     
     // MARK: construct view structure with config data
     override open func setValue(_ value: Any?, forUndefinedKey key: String) {
-        print("+++++++++++++++ KCUIKitAdtion UIView_Addtion +++++++++++++++")
-        print("\(key) == \(value ?? "")")
+//        print("+++++++++++++++ KCUIKitAdtion UIView_Addtion +++++++++++++++")
+//        print("\(key) == \(value ?? "")")
     }
     
     public func updateWithConfigData(_ data : [String:Any]?) {
