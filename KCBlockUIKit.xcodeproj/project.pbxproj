@@ -376,10 +376,6 @@
 			files = (
 			);
 			inputPaths = (
-				"$(HOME)/Carthage/swift4.2/Carthage/Build/iOS/RxCocoa.framework",
-				"$(HOME)/Carthage/swift4.2/Carthage/Build/iOS/RxBlocking.framework",
-				"$(HOME)/Carthage/swift4.2/Carthage/Build/iOS/RxSwift.framework",
-				"$(HOME)/Carthage/swift4.2/Carthage/Build/iOS/SnapKit.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
