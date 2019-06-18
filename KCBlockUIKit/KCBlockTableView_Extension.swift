@@ -15,7 +15,7 @@ open class KCBlockTableCell : UITableViewCell {
         initSetup()
     }
     open var select : Bool = true
-    public override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    public override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         initSetup()
         self.select = false

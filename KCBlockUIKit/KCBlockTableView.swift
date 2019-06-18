@@ -60,10 +60,10 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     public var canEditIndexPath : (IndexPath)->Bool = { _ in
         return false
     }
-    public var editStyleForIndexPath : (IndexPath)->UITableViewCellEditingStyle = { _ in
-        return UITableViewCellEditingStyle.none
+    public var editStyleForIndexPath : (IndexPath)->UITableViewCell.EditingStyle = { _ in
+        return UITableViewCell.EditingStyle.none
     }
-    public var editActionForIndexPath : (UITableView,IndexPath,UITableViewCellEditingStyle)->() = { _, _, _ in
+    public var editActionForIndexPath : (UITableView,IndexPath,UITableViewCell.EditingStyle)->() = { _, _, _ in
     }
     public var willBeginEdit : (UITableView,IndexPath)->() = { _, _ in
     }
@@ -135,10 +135,10 @@ open class KCBlockTableView : UITableView, UITableViewDataSource, UITableViewDel
     public func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return canEditIndexPath(indexPath)
     }
-    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    public func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return editStyleForIndexPath(indexPath)
     }
-    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         editActionForIndexPath(tableView, indexPath, editingStyle)
     }
     public func tableView(_ tableView: UITableView, willBeginEditingRowAt indexPath: IndexPath) {

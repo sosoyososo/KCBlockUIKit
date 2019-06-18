@@ -44,7 +44,7 @@ public let KCScreenHeight = UIScreen.main.bounds.size.height
 public func KCVersionString() -> String {
     if let info = Bundle.main.infoDictionary {
         let key = String("CFBundleShortVersionString")
-        if let version = info[key!] as? String {
+        if let version = info[key] as? String {
             return version
         }
     }
@@ -54,7 +54,7 @@ public func KCVersionString() -> String {
 public func KCBuildVersionString() -> String {
     if let info = Bundle.main.infoDictionary {
         let key = String("CFBundleVersion")
-        if let version = info[key!] as? String {
+        if let version = info[key] as? String {
             return "\(version)"
         }
     }

@@ -10,7 +10,7 @@ import Foundation
 
 open class KCBlockWebViewController : UIViewController, UIWebViewDelegate {
     open var url : URL!
-    open let webView = UIWebView()
+    public let webView = UIWebView()
     
     open var loadViewAction : (UIViewController)->() = { _ in
     }
@@ -20,7 +20,7 @@ open class KCBlockWebViewController : UIViewController, UIWebViewDelegate {
     }
     open var didFinish : (UIWebView)->() = { _ in
     }
-    open var didFail : (UIWebView, Error)->() = { _ in
+    open var didFail : (UIWebView, Error)->() = { _, _ in
     }
     
     deinit {
