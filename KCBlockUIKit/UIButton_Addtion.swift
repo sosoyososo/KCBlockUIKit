@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 
 extension UIButton {
-    public var title : String? {
+    @objc public var title : String? {
         get {
             return self.title(for: UIControl.State.normal)
         }
@@ -19,7 +19,7 @@ extension UIButton {
             self.setTitle(newValue, for: UIControl.State.normal)
         }
     }
-    public var titleColor : UIColor? {
+    @objc public var titleColor : UIColor? {
         get {
             return self.titleColor(for: UIControl.State.normal)
         }
@@ -27,7 +27,7 @@ extension UIButton {
             self.setTitleColor(newValue, for: UIControl.State.normal)
         }
     }
-    public var titleFont : UIFont? {
+    @objc public var titleFont : UIFont? {
         get {
             return self.titleLabel?.font
         }
@@ -35,7 +35,7 @@ extension UIButton {
             self.titleLabel?.font = newValue
         }
     }
-    public var titleShadowColor: UIColor? {
+    @objc public var titleShadowColor: UIColor? {
         get {
             return self.titleShadowColor(for: UIControl.State.normal)
         }
@@ -43,7 +43,7 @@ extension UIButton {
             self.setTitleShadowColor(newValue, for: UIControl.State.normal)
         }
     }
-    public var image : UIImage? {
+    @objc public var image : UIImage? {
         get {
             return self.image(for: UIControl.State.normal)
         }
@@ -51,7 +51,7 @@ extension UIButton {
             self.setImage(newValue, for: UIControl.State.normal)
         }
     }
-    public var backgroundImage : UIImage? {
+    @objc public var backgroundImage : UIImage? {
         get {
             return self.backgroundImage(for: UIControl.State.normal)
         }
@@ -59,7 +59,7 @@ extension UIButton {
             self.setBackgroundImage(newValue, for: UIControl.State.normal)
         }
     }
-    public var attributedTitle : NSAttributedString? {
+    @objc public var attributedTitle : NSAttributedString? {
         get {
             return self.attributedTitle(for: UIControl.State.normal)
         }

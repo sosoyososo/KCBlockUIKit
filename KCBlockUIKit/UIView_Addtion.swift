@@ -15,7 +15,7 @@ let KCView_Action_Key = "KCView_Action_Key"
 
 extension UIView {
     
-    public var left : CGFloat {
+    @objc public var left : CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -25,7 +25,7 @@ extension UIView {
             self.frame = frame
         }
     }
-    public var top : CGFloat {
+    @objc public var top : CGFloat {
         get {
             return self.frame.origin.y
         }
@@ -35,7 +35,7 @@ extension UIView {
             self.frame = frame
         }
     }
-    public var right : CGFloat {
+    @objc public var right : CGFloat {
         get {
             return frame.origin.x + self.frame.size.width
         }
@@ -45,7 +45,7 @@ extension UIView {
             self.frame = frame
         }
     }
-    public var bottom : CGFloat {
+    @objc public var bottom : CGFloat {
         get {
             return frame.origin.y + self.frame.size.height
         }
@@ -55,7 +55,7 @@ extension UIView {
             self.frame = frame
         }
     }
-    public var height : CGFloat {
+    @objc public var height : CGFloat {
         get {
             return self.size.height
         }
@@ -66,7 +66,7 @@ extension UIView {
         }
     }
     
-    public var width : CGFloat {
+    @objc public var width : CGFloat {
         get {
             return self.size.width
         }
@@ -76,7 +76,7 @@ extension UIView {
             self.frame = frame
         }
     }
-    public var centerX : CGFloat {
+    @objc public var centerX : CGFloat {
         get {
             return (self.frame.origin.x + self.frame.size.width)/2
         }
@@ -86,7 +86,7 @@ extension UIView {
             self.frame = frame
         }
     }
-    public var centerY : CGFloat {
+    @objc public var centerY : CGFloat {
         get {
             return (self.frame.origin.y + self.frame.size.height)/2
         }
@@ -97,7 +97,7 @@ extension UIView {
         }
     }
     
-    public var size : CGSize {
+    @objc public var size : CGSize {
         get {
             return self.frame.size
         }
@@ -108,7 +108,7 @@ extension UIView {
         }
     }
     
-    public var origin : CGPoint {
+    @objc public var origin : CGPoint {
         get {
             return self.frame.origin
         }
@@ -235,7 +235,7 @@ extension UIView {
         }
     }
     
-    public var snp_size : CGSize {
+    @objc public var snp_size : CGSize {
         get {
             return CGSize.zero
         }
@@ -246,7 +246,7 @@ extension UIView {
         }
     }
     
-    public var snp_center : CGPoint {
+    @objc public var snp_center : CGPoint {
         get {
             return CGPoint.zero
         }
@@ -257,7 +257,7 @@ extension UIView {
         }
     }
     
-    public var snp_edges : UIEdgeInsets {
+    @objc public var snp_edges : UIEdgeInsets {
         get {
             return UIEdgeInsets.zero
         }
