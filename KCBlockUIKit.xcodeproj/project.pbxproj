@@ -14,6 +14,8 @@
 		473AEA8222B9639C008DAF26 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473AEA7D22B9639C008DAF26 /* RxSwift.framework */; };
 		473AEA8322B9639C008DAF26 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473AEA7E22B9639C008DAF26 /* SnapKit.framework */; };
 		473AEA8422B9639C008DAF26 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473AEA7F22B9639C008DAF26 /* RxBlocking.framework */; };
+		475423D222B9E3AC00953409 /* UIColor+Hexing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475423CE22B9E3AC00953409 /* UIColor+Hexing.swift */; };
+		475423D322B9E3AC00953409 /* UIButton_Addtion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475423CF22B9E3AC00953409 /* UIButton_Addtion.swift */; };
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
 		476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */; };
 		476347B91F42F10400F041C1 /* KCBlockWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */; };
@@ -60,6 +62,8 @@
 		473AEA7D22B9639C008DAF26 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		473AEA7E22B9639C008DAF26 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		473AEA7F22B9639C008DAF26 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		475423CE22B9E3AC00953409 /* UIColor+Hexing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hexing.swift"; sourceTree = "<group>"; };
+		475423CF22B9E3AC00953409 /* UIButton_Addtion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton_Addtion.swift; sourceTree = "<group>"; };
 		476347B11F42F06700F041C1 /* KCBlockTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockTableView.swift; sourceTree = "<group>"; };
 		476347B61F42F0FC00F041C1 /* KCBlockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockViewController.swift; sourceTree = "<group>"; };
 		476347B81F42F10400F041C1 /* KCBlockWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCBlockWebViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +156,8 @@
 		476347BA1F42F11F00F041C1 /* UIKitExtension */ = {
 			isa = PBXGroup;
 			children = (
+				475423CF22B9E3AC00953409 /* UIButton_Addtion.swift */,
+				475423CE22B9E3AC00953409 /* UIColor+Hexing.swift */,
 				47EA7E5F1F5CFC9A0079B875 /* FuncMacro.swift */,
 				47EA7E591F5CFC2D0079B875 /* KCLoading.swift */,
 				47EA7E5A1F5CFC2D0079B875 /* KCTips.swift */,
@@ -430,8 +436,10 @@
 				476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */,
 				47EA7E601F5CFC9A0079B875 /* FuncMacro.swift in Sources */,
 				476A14A72011F0DB008E4122 /* KCTextViewController.swift in Sources */,
+				475423D222B9E3AC00953409 /* UIColor+Hexing.swift in Sources */,
 				47AA17F720EB113B00F2F750 /* KCFloatViewManager.swift in Sources */,
 				476347BE1F42F15A00F041C1 /* UIView_Addtion.swift in Sources */,
+				475423D322B9E3AC00953409 /* UIButton_Addtion.swift in Sources */,
 				470978B3201F209D006AE1E7 /* KCLog.swift in Sources */,
 				476347B71F42F0FC00F041C1 /* KCBlockViewController.swift in Sources */,
 			);
