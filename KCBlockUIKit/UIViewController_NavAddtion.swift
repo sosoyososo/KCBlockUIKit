@@ -52,8 +52,8 @@ extension UIViewController {
         }
         button.titleLabel?.font = font ?? UIFont.systemFont(ofSize: 16)
         button.titleLabel?.textAlignment = NSTextAlignment.center
-        button.setTitle(title ?? "", for: UIControl.State())
-        button.setTitleColor(titleColor ?? UIColor.black, for: UIControl.State())
+        button.setTitle(title ?? "", for: UIControl.State.normal)
+        button.setTitleColor(titleColor ?? UIColor.black, for: UIControl.State.normal)
         button.titleLabel?.sizeToFit()
         
         let titleSize = button.titleLabel?.size
@@ -93,8 +93,8 @@ extension UIViewController {
         }
         button.titleLabel?.font = font ?? UIFont.systemFont(ofSize: 16)
         button.titleLabel?.textAlignment = NSTextAlignment.center
-        button.setTitle(title ?? "", for: UIControl.State())
-        button.setTitleColor(titleColor ?? UIColor.black, for: UIControl.State())
+        button.setTitle(title ?? "", for: UIControl.State.normal)
+        button.setTitleColor(titleColor ?? UIColor.black, for: UIControl.State.normal)
         button.titleLabel?.sizeToFit()
         
         let titleSize = button.titleLabel?.size
