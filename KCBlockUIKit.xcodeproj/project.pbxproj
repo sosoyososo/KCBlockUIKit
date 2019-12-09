@@ -610,7 +610,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Carthage/swift5/Carthage/Build/iOS/";
 				INFOPLIST_FILE = KCBlockUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = f.k.KCBlockUIKit;
@@ -634,7 +634,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(HOME)/Carthage/swift5/Carthage/Build/iOS/";
 				INFOPLIST_FILE = KCBlockUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = f.k.KCBlockUIKit;
