@@ -45,15 +45,15 @@ extension UIViewController {
         , titleColor: UIColor?
         , font: UIFont?
         , action: (()->Void)?) {
-        let button = UIButton(type: UIButtonType.custom)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         button.setImage(image, for: .normal)
         if tintColor != nil {
             button.imageView?.tintColor = tintColor!
         }
         button.titleLabel?.font = font ?? UIFont.systemFont(ofSize: 16)
         button.titleLabel?.textAlignment = NSTextAlignment.center
-        button.setTitle(title ?? "", for: UIControlState())
-        button.setTitleColor(titleColor ?? UIColor.black, for: UIControlState())
+        button.setTitle(title ?? "", for: UIControl.State())
+        button.setTitleColor(titleColor ?? UIColor.black, for: UIControl.State())
         button.titleLabel?.sizeToFit()
         
         let titleSize = button.titleLabel?.size
@@ -86,15 +86,15 @@ extension UIViewController {
         , titleColor: UIColor?
         , font: UIFont?
         , action: (()->Void)?) {
-        let button = UIButton(type: UIButtonType.custom)
+        let button = UIButton(type: UIButton.ButtonType.custom)
         button.setImage(image, for: .normal)
         if tintColor != nil {
             button.imageView?.tintColor = tintColor!
         }
         button.titleLabel?.font = font ?? UIFont.systemFont(ofSize: 16)
         button.titleLabel?.textAlignment = NSTextAlignment.center
-        button.setTitle(title ?? "", for: UIControlState())
-        button.setTitleColor(titleColor ?? UIColor.black, for: UIControlState())
+        button.setTitle(title ?? "", for: UIControl.State())
+        button.setTitleColor(titleColor ?? UIColor.black, for: UIControl.State())
         button.titleLabel?.sizeToFit()
         
         let titleSize = button.titleLabel?.size

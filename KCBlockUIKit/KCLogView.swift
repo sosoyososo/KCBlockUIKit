@@ -146,14 +146,14 @@ open class KCLogViewController : UIViewController {
     
     
     func showFilter() {
-        let alert = UIAlertController.init(title: "filter", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        let alert = UIAlertController.init(title: "filter", message: nil, preferredStyle: UIAlertController.Style.actionSheet)
         for tag in KCLogManager.share.allLogTags {
-            let action = UIAlertAction.init(title: tag, style: UIAlertActionStyle.default, handler: {  [unowned self] (_) in
+            let action = UIAlertAction.init(title: tag, style: UIAlertAction.Style.default, handler: {  [unowned self] (_) in
                 self.filter(with: tag)
             })
             alert.addAction(action)
         }
-        let action = UIAlertAction.init(title: KCLogManager.allTagKey, style: UIAlertActionStyle.default, handler: { [unowned self] (_) in
+        let action = UIAlertAction.init(title: KCLogManager.allTagKey, style: UIAlertAction.Style.default, handler: { [unowned self] (_) in
             self.filter(with: KCLogManager.allTagKey)
         })
         alert.addAction(action)

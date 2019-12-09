@@ -153,7 +153,7 @@ extension UIView {
     }
     
     public func addSubViewWithConfigData(_ data : [String:Any]?) -> UIView? {
-        if let className = data?[KCViewClassKey] as? String, className.characters.count > 0 {
+        if let className = data?[KCViewClassKey] as? String, className.count > 0 {
             if let cls = NSClassFromString(className) as? UIView.Type {
                 let view = cls.init(frame: CGRect.zero)
                 self.addSubview(view)

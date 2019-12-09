@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4707E6A0239E9BC700688CDD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDC239E99C900FFC1A3 /* RxSwift.framework */; };
+		4707E6A1239E9BC700688CDD /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDC239E99C900FFC1A3 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4707E6A3239E9BCC00688CDD /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDD239E99CA00FFC1A3 /* RxCocoa.framework */; };
+		4707E6A4239E9BCC00688CDD /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDD239E99CA00FFC1A3 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4707E6A5239E9BD700688CDD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBD8239E999C00FFC1A3 /* SnapKit.framework */; };
+		4707E6A6239E9BD700688CDD /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBD8239E999C00FFC1A3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4707E6A7239E9C0B00688CDD /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDA239E99BF00FFC1A3 /* RxBlocking.framework */; };
+		4707E6A8239E9C0B00688CDD /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDA239E99BF00FFC1A3 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		470978B3201F209D006AE1E7 /* KCLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B1201F209D006AE1E7 /* KCLog.swift */; };
 		470978B5201F254C006AE1E7 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B4201F254C006AE1E7 /* KCLogView.swift */; };
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
@@ -18,10 +26,6 @@
 		476A14A72011F0DB008E4122 /* KCTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476A14A62011F0DB008E4122 /* KCTextViewController.swift */; };
 		4789B3131F42EFED00B12452 /* KCBlockUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4789B3091F42EFED00B12452 /* KCBlockUIKit.framework */; };
 		4789B31A1F42EFED00B12452 /* KCBlockUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4799688E1FD696E200DD3C3A /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4799688D1FD696E200DD3C3A /* RxBlocking.framework */; };
-		479968901FD696E600DD3C3A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4799688F1FD696E600DD3C3A /* RxCocoa.framework */; };
-		479968921FD696E900DD3C3A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479968911FD696E900DD3C3A /* RxSwift.framework */; };
-		479968941FD696ED00DD3C3A /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 479968931FD696ED00DD3C3A /* SnapKit.framework */; };
 		47AA17F720EB113B00F2F750 /* KCFloatViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA17F620EB113B00F2F750 /* KCFloatViewManager.swift */; };
 		47AA183620EB1BC200F2F750 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA183520EB1BC200F2F750 /* AppDelegate.swift */; };
 		47AA183820EB1BC200F2F750 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA183720EB1BC200F2F750 /* ViewController.swift */; };
@@ -44,6 +48,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4707E6A2239E9BC800688CDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4707E6A6239E9BD700688CDD /* SnapKit.framework in Embed Frameworks */,
+				4707E6A4239E9BCC00688CDD /* RxCocoa.framework in Embed Frameworks */,
+				4707E6A1239E9BC700688CDD /* RxSwift.framework in Embed Frameworks */,
+				4707E6A8239E9C0B00688CDD /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		470978B1201F209D006AE1E7 /* KCLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLog.swift; sourceTree = "<group>"; };
 		470978B4201F254C006AE1E7 /* KCLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCLogView.swift; sourceTree = "<group>"; };
@@ -58,6 +79,10 @@
 		476347C41F42F1F800F041C1 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../Carthage/swift3/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		476347C51F42F1F800F041C1 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../Carthage/swift3/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		476A14A62011F0DB008E4122 /* KCTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCTextViewController.swift; sourceTree = "<group>"; };
+		477CFBD8239E999C00FFC1A3 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		477CFBDA239E99BF00FFC1A3 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		477CFBDC239E99C900FFC1A3 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		477CFBDD239E99CA00FFC1A3 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = ../../../Carthage/swift5/Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4789B3091F42EFED00B12452 /* KCBlockUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KCBlockUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4789B30C1F42EFED00B12452 /* KCBlockUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCBlockUIKit.h; sourceTree = "<group>"; };
 		4789B30D1F42EFED00B12452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,10 +109,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				479968941FD696ED00DD3C3A /* SnapKit.framework in Frameworks */,
-				4799688E1FD696E200DD3C3A /* RxBlocking.framework in Frameworks */,
-				479968901FD696E600DD3C3A /* RxCocoa.framework in Frameworks */,
-				479968921FD696E900DD3C3A /* RxSwift.framework in Frameworks */,
+				4707E6A5239E9BD700688CDD /* SnapKit.framework in Frameworks */,
+				4707E6A3239E9BCC00688CDD /* RxCocoa.framework in Frameworks */,
+				4707E6A0239E9BC700688CDD /* RxSwift.framework in Frameworks */,
+				4707E6A7239E9C0B00688CDD /* RxBlocking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +171,11 @@
 		476347C11F42F1F800F041C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				477CFBDD239E99CA00FFC1A3 /* RxCocoa.framework */,
+				477CFBDC239E99C900FFC1A3 /* RxSwift.framework */,
+				477CFBDA239E99BF00FFC1A3 /* RxBlocking.framework */,
 				479968931FD696ED00DD3C3A /* SnapKit.framework */,
+				477CFBD8239E999C00FFC1A3 /* SnapKit.framework */,
 				479968911FD696E900DD3C3A /* RxSwift.framework */,
 				4799688F1FD696E600DD3C3A /* RxCocoa.framework */,
 				476347C21F42F1F800F041C1 /* RxBlocking.framework */,
@@ -235,6 +264,7 @@
 				4789B3061F42EFED00B12452 /* Headers */,
 				4789B3071F42EFED00B12452 /* Resources */,
 				476347CA1F42F21400F041C1 /* Run Script */,
+				4707E6A2239E9BC800688CDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +341,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -366,7 +397,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		47AA184620EB1D3C00F2F750 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -564,16 +595,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "~/Carthage/swift3.2/Carthage/Build/iOS/";
+				FRAMEWORK_SEARCH_PATHS = $HOME/Carthage/swift5/Carthage/Build/iOS/;
 				INFOPLIST_FILE = KCBlockUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = f.k.KCBlockUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -586,15 +619,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "~/Carthage/swift3.2/Carthage/Build/iOS/";
+				FRAMEWORK_SEARCH_PATHS = $HOME/Carthage/swift5/Carthage/Build/iOS/;
 				INFOPLIST_FILE = KCBlockUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = f.k.KCBlockUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
