@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4707E6A0239E9BC700688CDD /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDC239E99C900FFC1A3 /* RxSwift.framework */; };
-		4707E6A1239E9BC700688CDD /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDC239E99C900FFC1A3 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4707E6A3239E9BCC00688CDD /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDD239E99CA00FFC1A3 /* RxCocoa.framework */; };
-		4707E6A4239E9BCC00688CDD /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDD239E99CA00FFC1A3 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4707E6A5239E9BD700688CDD /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBD8239E999C00FFC1A3 /* SnapKit.framework */; };
-		4707E6A6239E9BD700688CDD /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBD8239E999C00FFC1A3 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4707E6A7239E9C0B00688CDD /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDA239E99BF00FFC1A3 /* RxBlocking.framework */; };
-		4707E6A8239E9C0B00688CDD /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 477CFBDA239E99BF00FFC1A3 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		470978B3201F209D006AE1E7 /* KCLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B1201F209D006AE1E7 /* KCLog.swift */; };
 		470978B5201F254C006AE1E7 /* KCLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470978B4201F254C006AE1E7 /* KCLogView.swift */; };
 		476347B21F42F06700F041C1 /* KCBlockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476347B11F42F06700F041C1 /* KCBlockTableView.swift */; };
@@ -55,10 +51,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4707E6A6239E9BD700688CDD /* SnapKit.framework in Embed Frameworks */,
-				4707E6A4239E9BCC00688CDD /* RxCocoa.framework in Embed Frameworks */,
-				4707E6A1239E9BC700688CDD /* RxSwift.framework in Embed Frameworks */,
-				4707E6A8239E9C0B00688CDD /* RxBlocking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
